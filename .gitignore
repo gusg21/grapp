@@ -5,6 +5,7 @@
 # env setter
 *.bat
 *.sh
+posted.txt
 
 
 # Byte-compiled / optimized / DLL files
