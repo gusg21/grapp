@@ -4,6 +4,7 @@
 *.log
 # env setter
 *.bat
+*.sh
 
 
 # Byte-compiled / optimized / DLL files
