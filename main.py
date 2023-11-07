@@ -5,24 +5,31 @@ import logging
 
 ### ENV
 
+# Discord app information
 GRAPP_TOKEN = os.environ.get("GRAPP_TOKEN")
 GRAPP_APP_ID = os.environ.get("GRAPP_APP_ID")
 GRAPP_PUB_KEY = os.environ.get("GRAPP_PUB_KEY")
 
+# Tumblr app information
 GRAPP_TUMBLR_CONSUMER_SECRET = os.environ.get("GRAPP_TUMBLR_CONSUMER_SECRET")
 GRAPP_TUMBLR_CONSUMER_KEY = os.environ.get("GRAPP_TUMBLR_CONSUMER_KEY")
 GRAPP_TUMBLR_TOKEN = os.environ.get("GRAPP_TUMBLR_TOKEN")
 GRAPP_TUMBLR_SECRET = os.environ.get("GRAPP_TUMBLR_SECRET")
 
+# Discord forum channel names to post in
 GRAPP_FORUM_CHANNELS = os.environ.get("GRAPP_FORUM_CHANNELS").split(",")
 
+# Config
 GRAPP_TUMBLR_NAME = os.environ.get("GRAPP_TUMBLR_NAME")
 GRAPP_ADMIN_DISCORD_NAME = os.environ.get("GRAPP_ADMIN_DISCORD_NAME")
+# the name of the new thread, {} substituted for the date.
 GRAPP_FORUM_THREAD_TEMPLATE = os.environ.get("GRAPP_FORUM_THREAD_TEMPLATE")
-GRAPP_FORUM_THREAD_TAGS = os.environ.get("GRAPP_FORUM_THREAD_TAGS").split(",")
-GRAPP_MAX_SECS_TO_POST = 60 * 20
+# tags to apply to post. could be required on some servers
+GRAPP_FORUM_THREAD_TAGS = os.environ.get("GRAPP_FORUM_THREAD_TAGS").split(",") 
+GRAPP_MAX_SECS_TO_POST = 60 * 20 # how long since post before we ignore it
 GRAPP_CHECK_TUMBLR_EVERY_SECS = 5
 
+# Save file
 GRAPP_POSTED_FILE = "posted.txt"
 
 ### LOGGING
